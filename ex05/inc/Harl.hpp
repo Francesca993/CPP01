@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 12:12:32 by francesca         #+#    #+#             */
-/*   Updated: 2025/11/20 14:09:31 by francesca        ###   ########.fr       */
+/*   Updated: 2025/11/20 17:10:08 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ class Harl {
     void info(void);
     void warning(void);
     void error(void);
-    typedef void (Harl::*HarlFunc)();
     
     public:
     Harl();

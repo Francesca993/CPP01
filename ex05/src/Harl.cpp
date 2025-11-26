@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Harl.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 12:15:23 by francesca         #+#    #+#             */
-/*   Updated: 2025/11/20 14:09:56 by francesca        ###   ########.fr       */
+/*   Updated: 2025/11/20 17:10:25 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ void Harl::error()
 
 void Harl::complain(std::string level)
 {
+	typedef void (Harl::*HarlFunc)();
+	
     HarlFunc funcs[4] = {&Harl::debug, &Harl::info, &Harl::warning,
 	    &Harl::error};
 	std::string levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};

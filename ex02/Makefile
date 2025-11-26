@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: francesca <francesca@student.42.fr>        +#+  +:+       +#+         #
+#    By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/18 14:00:00 by your_name         #+#    #+#              #
-#    Updated: 2025/11/18 15:02:21 by francesca        ###   ########.fr        #
+#    Updated: 2025/11/20 14:18:05 by fmontini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,6 @@ RM			=	rm -f
 # Rules
 #–––––––––––––––––––––––––––––
 
-# Default rule: Build the executable
 all:			$(NAME)
 
 # Create the object directory

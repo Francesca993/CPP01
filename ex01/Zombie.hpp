@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 13:17:41 by francesca         #+#    #+#             */
-/*   Updated: 2025/11/18 14:14:32 by francesca        ###   ########.fr       */
+/*   Updated: 2025/11/20 16:49:28 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,15 +29,10 @@ class Zombie
         std::string _name;
 
     public:
-    // Necessario per new Zombie[N]
     Zombie();
-    // Costruttore con parametro (come prima)
-    Zombie(std::string name);
-    // Distruttore
     ~Zombie();
-    // Metodo announce (come prima)
     void announce(void);
-    // NUOVO: Metodo per settare il nome dopo la creazione
+
     void setName(std::string name, int index);
 };
 

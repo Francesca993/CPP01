@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 13:36:21 by francesca         #+#    #+#             */
-/*   Updated: 2025/11/18 14:12:52 by francesca        ###   ########.fr       */
+/*   Updated: 2025/11/20 14:23:10 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,22 +15,20 @@
 
 int main()
 {
-    std::cout << GREEN << "=== Creating a horde of 10 zombies ===" << std::endl;
+    std::cout << GREEN << "=== Creating a horde of 10 zombies ===" << RESET << std::endl;
     
     int hordeSize = 10;
     Zombie* horde = zombieHorde(hordeSize, "Walker");
     
-    std::cout << YELLOW << "\n=== Making the horde announce ===" << std::endl;
+    std::cout << YELLOW << "\n=== Making the horde announce ===" << RESET << std::endl;
     
-    // Fa annunciare ogni zombie
     for (int i = 0; i < hordeSize; i++)
     {
         horde[i].announce();
     }
     
-    std::cout << RED << "\n=== Destroying the horde ===" << std::endl;
+    std::cout << RED << "\n=== Destroying the horde ===" << RESET << std::endl;
     
-    // IMPORTANTE: usa delete[] per array!
     delete[] horde;
     return 0;
 }

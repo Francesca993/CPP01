@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/02 17:03:53 by francesca         #+#    #+#             */
-/*   Updated: 2025/11/18 14:10:59 by francesca        ###   ########.fr       */
+/*   Updated: 2025/11/20 16:43:39 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,10 @@ class Zombie
 	std::string _name;
 
   public: 
-    Zombie();
-	// Distruttore: viene chiamato quando lo zombie viene distrutto
+    Zombie(std::string name);
 	~Zombie();
-	// Metodo che fa annunciare lo zombie
+
 	void announce(void);
-	void Zombie::setName(std::string name, int index);
 };
 
 Zombie *newZombie(std::string name);

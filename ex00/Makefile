@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: francesca <francesca@student.42.fr>        +#+  +:+       +#+         #
+#    By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/25 10:53:11 by francesca         #+#    #+#              #
-#    Updated: 2025/11/17 19:00:16 by francesca        ###   ########.fr        #
+#    Updated: 2025/11/26 17:09:31 by fmontini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,8 +37,8 @@ OBJS		=	$(addprefix $(OBJS_DIR), $(SRC:.cpp=.o))
 # Compiler and Flags
 #–––––––––––––––––––––––––––––
 NAME		=	BraiiiiiiinnnzzzZ
-CXX			=	g++
-CXXFLAGS	=	-Wall -Wextra -Werror -g -std=c++98
+CXX			=	c++
+CXXFLAGS	=	-Wall -Wextra -Werror -g -std=c++98 
 RM			=	rm -f
 
 #–––––––––––––––––––––––––––––

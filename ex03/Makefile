@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: francesca <francesca@student.42.fr>        +#+  +:+       +#+         #
+#    By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/18 14:00:00 by your_name         #+#    #+#              #
-#    Updated: 2025/11/20 09:37:05 by francesca        ###   ########.fr        #
+#    Updated: 2025/11/20 14:18:53 by fmontini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,9 +28,9 @@ SRCS_DIR	=	./src/
 OBJS_DIR	=	obj
 INC_DIR		=	./inc/
 
-# Trova automaticamente tutti i file .cpp nella directory corrente
+
 SRCS		=	$(wildcard $(SRCS_DIR)*.cpp)
-# Trasforma src/xxx.cpp -> obj/xxx.o
+
 OBJS		=	$(patsubst $(SRCS_DIR)%.cpp,$(OBJS_DIR)/%.o,$(SRCS))
 
 #–––––––––––––––––––––––––––––

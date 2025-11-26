@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 13:19:53 by francesca         #+#    #+#             */
-/*   Updated: 2025/11/18 14:14:55 by francesca        ###   ########.fr       */
+/*   Updated: 2025/11/20 16:50:38 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,17 @@
 // Viene chiamato quando fai new Zombie[N]
 Zombie::Zombie()
 {
-    _name = "Unnamed Zombie Default";  // Nome di default
+    _name = "Unnamed Zombie Default";
     std::cout << BLUE << "Zombie created (default)" << std::endl;
 }
 
-// Distruttore (come prima)
+// Distruttore
 Zombie::~Zombie()
 {
     std::cout << RED << _name << " has been destroyed" << std::endl;
 }
 
-// Metodo announce (come prima)
+// Metodo announce 
 void Zombie::announce(void)
 {
     std::cout << YELLOW << _name << ": BraiiiiiiinnnzzzZ..." << std::endl;
@@ -36,11 +36,10 @@ void Zombie::announce(void)
 //Metodo per settare il nome con indice
 void Zombie::setName(std::string name, int index)
 {
-    // Converti int → string usando stringstream (C++98)
     std::stringstream newName;
-    newName << name << index; // Concatena nome + numero
-    _name = newName.str(); // Estrae la stringa risultante
+    newName << name << index;
+    _name = newName.str();
     std::cout << GREEN << _name << " has been created" << std::endl;
-    newName.str("");      // Svuota il buffer
-    newName.clear();      // Resetta gli stati
+    newName.str("");
+    newName.clear();
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 22:41:02 by francesca         #+#    #+#             */
-/*   Updated: 2025/11/19 23:17:30 by francesca        ###   ########.fr       */
+/*   Updated: 2025/11/20 15:32:53 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "Weapon.hpp"
 #include <iostream>
 
-HumanB::HumanB(std::string name): _name(name)
+HumanB::HumanB(std::string name): _name(name), _weapon(NULL)
 {
 }
 
